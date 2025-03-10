@@ -394,7 +394,7 @@ window.Script222 = function()
 
 window.Script223 = function()
 {
-  fetch('https://raw.githubusercontent.com/Richmelody/storyline/main/mobile/easy.png')
+  fetch('https://raw.githubusercontent.com/Richmelody/storyline/main/mobile/5m4WN0iXBBp.png')
   .then(response => response.blob())
   .then(blob => {
     var link = document.createElement('a');
