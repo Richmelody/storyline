@@ -5,7 +5,7 @@ var object = player.object;
 var addToTimeline = player.addToTimeline;
 var setVar = player.SetVar;
 var getVar = player.GetVar;
-window.Script193 = function()
+window.Script195 = function()
 {
   window.controlTimer = function(start) {
     var player = GetPlayer();
@@ -27,43 +27,12 @@ window.Script193 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
-
-}
-
-window.Script194 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script195 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
 window.Script196 = function()
 {
-  window.controlTimer = function(start) {
-    var player = GetPlayer();
-    
-    if (start) {
-        var timeLeft = player.GetVar("Timer");
-        
-        function countdown() {
-            if (timeLeft >= -1) {
-                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
-                player.SetVar("Timer", formattedTime);
-                timeLeft--;
-                window.countdownTimer = setTimeout(countdown, 1000);
-            }
-        }
-        countdown();
-    } else {
-        clearTimeout(window.countdownTimer); // Stops the countdown
-    }
-};
-window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -75,11 +44,42 @@ window.Script197 = function()
 
 window.Script198 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
+  window.controlTimer = function(start) {
+    var player = GetPlayer();
+    
+    if (start) {
+        var timeLeft = player.GetVar("Timer");
+        
+        function countdown() {
+            if (timeLeft >= -1) {
+                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+                player.SetVar("Timer", formattedTime);
+                timeLeft--;
+                window.countdownTimer = setTimeout(countdown, 1000);
+            }
+        }
+        countdown();
+    } else {
+        clearTimeout(window.countdownTimer); // Stops the countdown
+    }
+};
+window.controlTimer(true); // Starts the timer when timeline reaches X seconds
 
 }
 
 window.Script199 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script200 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script201 = function()
 {
   // ✅ SHOW POPUP WITH SPINNER
 function showPopup(message, id = "custom-popup") {
@@ -211,7 +211,7 @@ downloadBadgeWithPopup();
 
 }
 
-window.Script200 = function()
+window.Script202 = function()
 {
   window.controlTimer = function(start) {
     var player = GetPlayer();
@@ -233,43 +233,12 @@ window.Script200 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
-
-}
-
-window.Script201 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script202 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
 window.Script203 = function()
 {
-  window.controlTimer = function(start) {
-    var player = GetPlayer();
-    
-    if (start) {
-        var timeLeft = player.GetVar("Timer");
-        
-        function countdown() {
-            if (timeLeft >= -1) {
-                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
-                player.SetVar("Timer", formattedTime);
-                timeLeft--;
-                window.countdownTimer = setTimeout(countdown, 1000);
-            }
-        }
-        countdown();
-    } else {
-        clearTimeout(window.countdownTimer); // Stops the countdown
-    }
-};
-window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -281,12 +250,6 @@ window.Script204 = function()
 
 window.Script205 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script206 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -307,6 +270,12 @@ window.Script206 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script206 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -318,12 +287,6 @@ window.Script207 = function()
 
 window.Script208 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script209 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -344,6 +307,12 @@ window.Script209 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script209 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -355,12 +324,6 @@ window.Script210 = function()
 
 window.Script211 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script212 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -381,6 +344,12 @@ window.Script212 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script212 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -392,12 +361,6 @@ window.Script213 = function()
 
 window.Script214 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script215 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -418,6 +381,12 @@ window.Script215 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script215 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -429,12 +398,6 @@ window.Script216 = function()
 
 window.Script217 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script218 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -455,6 +418,12 @@ window.Script218 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script218 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -466,11 +435,42 @@ window.Script219 = function()
 
 window.Script220 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
+  window.controlTimer = function(start) {
+    var player = GetPlayer();
+    
+    if (start) {
+        var timeLeft = player.GetVar("Timer");
+        
+        function countdown() {
+            if (timeLeft >= -1) {
+                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+                player.SetVar("Timer", formattedTime);
+                timeLeft--;
+                window.countdownTimer = setTimeout(countdown, 1000);
+            }
+        }
+        countdown();
+    } else {
+        clearTimeout(window.countdownTimer); // Stops the countdown
+    }
+};
+window.controlTimer(true); // Starts the timer when timeline reaches X seconds
 
 }
 
 window.Script221 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script222 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script223 = function()
 {
   window.controlTimer = function(start) {
     var player = GetPlayer();
@@ -495,19 +495,19 @@ window.controlTimer(true); // Starts the timer when timeline reaches X seconds
 
 }
 
-window.Script222 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script223 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
 window.Script224 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script225 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script226 = function()
 {
   // ✅ SHOW POPUP WITH SPINNER
 function showPopup(message, id = "custom-popup") {
@@ -645,7 +645,7 @@ downloadBadgeWithPopup();
 
 }
 
-window.Script225 = function()
+window.Script227 = function()
 {
   window.controlTimer = function(start) {
     var player = GetPlayer();
@@ -667,43 +667,12 @@ window.Script225 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
-
-}
-
-window.Script226 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script227 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
 window.Script228 = function()
 {
-  window.controlTimer = function(start) {
-    var player = GetPlayer();
-    
-    if (start) {
-        var timeLeft = player.GetVar("Timer");
-        
-        function countdown() {
-            if (timeLeft >= -1) {
-                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
-                player.SetVar("Timer", formattedTime);
-                timeLeft--;
-                window.countdownTimer = setTimeout(countdown, 1000);
-            }
-        }
-        countdown();
-    } else {
-        clearTimeout(window.countdownTimer); // Stops the countdown
-    }
-};
-window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -715,12 +684,6 @@ window.Script229 = function()
 
 window.Script230 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script231 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -741,6 +704,12 @@ window.Script231 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script231 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -752,12 +721,6 @@ window.Script232 = function()
 
 window.Script233 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script234 = function()
-{
   window.controlTimer = function(start) {
     var player = GetPlayer();
     
@@ -778,6 +741,12 @@ window.Script234 = function()
     }
 };
 window.controlTimer(true); // Starts the timer when timeline reaches X seconds
+
+}
+
+window.Script234 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
 
 }
 
@@ -789,11 +758,42 @@ window.Script235 = function()
 
 window.Script236 = function()
 {
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
+  window.controlTimer = function(start) {
+    var player = GetPlayer();
+    
+    if (start) {
+        var timeLeft = player.GetVar("Timer");
+        
+        function countdown() {
+            if (timeLeft >= -1) {
+                var formattedTime = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+                player.SetVar("Timer", formattedTime);
+                timeLeft--;
+                window.countdownTimer = setTimeout(countdown, 1000);
+            }
+        }
+        countdown();
+    } else {
+        clearTimeout(window.countdownTimer); // Stops the countdown
+    }
+};
+window.controlTimer(true); // Starts the timer when timeline reaches X seconds
 
 }
 
 window.Script237 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script238 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script239 = function()
 {
   window.controlTimer = function(start) {
     var player = GetPlayer();
@@ -818,19 +818,19 @@ window.controlTimer(true); // Starts the timer when timeline reaches X seconds
 
 }
 
-window.Script238 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
-window.Script239 = function()
-{
-  window.controlTimer(false); // Stops the countdown when Submit is clicked
-
-}
-
 window.Script240 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script241 = function()
+{
+  window.controlTimer(false); // Stops the countdown when Submit is clicked
+
+}
+
+window.Script242 = function()
 {
   // ✅ SHOW POPUP WITH SPINNER
 function showPopup(message, id = "custom-popup") {
